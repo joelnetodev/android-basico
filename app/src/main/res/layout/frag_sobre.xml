@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Sobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtTitulo"/>
+
+    <ImageView
+        style="@style/imgSobre"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgsobre1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Foi no curso de Pós-Graduação em Engenharia de Software, na disciplina de Dispositivos Móveis, que tive o meu primeiro contato e interesse em desenvolvimento para Android."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Lembrei dos assuntos ministrados em sala de aula e o quanto foi difícil entender alguns conceitos novos e diferentes que a plataforma adotava, pois para mim, era um mundo inexplorado e cheio de possibilidades."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Ao final da disciplina tive a idéia de criar um aplicativo que descrevesse e ajudasse os desenvolvedores e interessados a aprender como funcionam os aplicativos e alguns recursos que a plataforma tem a oferecer."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItem"
+        android:text="Desenvolvimento"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Meu nome é Joel Neto e este aplicativo foi desenvolvido por mim usando o Android Studio."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Todas as imagens de código fonte são reais, com exemplos práticos utilizados durante o desenvolvimento desta aplicação."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItem"
+        android:text="Referências"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="As fontes de informações, em sua maioria, foram utilizando o material fornecido em sala de aula, pelo site oficial https://developer.android.com e pesquisas de implementação de código em http://www.felipesilveira.com.br/desenvolvendo-para-android/."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Obrigado pelo interesse!"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Espero que tenha gostado deste aplicativo tanto quanto eu gostei de fazê-lo."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="O código fonte encontra-se em:"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="https://github.com/joelnetodev/androidbasico"/>
+
+    </LinearLayout>
+
+
+
+
+
+

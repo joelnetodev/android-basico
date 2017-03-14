@@ -1,0 +1,55 @@
+
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+            <group android:id="@+id/grp0" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_inicio"
+                    android:checked="true"
+                    android:icon="@drawable/navhome"
+                    android:title="Início" />
+            </group>
+            <group android:id="@+id/grp1" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_intro"
+                    android:icon="@drawable/navintro"
+                    android:title="Introdução" />
+            </group>
+            <group android:id="@+id/grp2" android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_intent"
+                android:icon="@drawable/navintent"
+                android:title="0 - Intent" />
+            </group>
+            <group android:id="@+id/grp3" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_activity"
+                    android:icon="@drawable/navactivity"
+                    android:title="1 - Activity" />
+            </group>
+            <group android:id="@+id/grp4" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_service"
+                    android:icon="@drawable/navservice"
+                    android:title="2 - Service" />
+            </group>
+            <group android:id="@+id/grp5" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_content"
+                    android:icon="@drawable/navcontent"
+                    android:title="3 - Content Providers" />
+            </group>
+            <group android:id="@+id/grp6" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_broad"
+                    android:icon="@drawable/navbroad"
+                    android:title="4 - Boradcast Receivers" />
+            </group>
+            <group android:id="@+id/grp7" android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_sobre"
+                    android:icon="@drawable/navsobre"
+                    android:title="Sobre" />
+            </group>
+    </menu>
+
+

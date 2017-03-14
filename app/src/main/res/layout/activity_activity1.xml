@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="false"
+    style="@style/layoutCorpo"
+    android:id="@+id/activity_activity1"
+    tools:context="com.joelnetodev.aprendendoandroid.Activity.Activity1ForActivity">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Nova Tela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtTitulo"/>
+
+            <TextView
+                android:id="@+id/txtValorDigitado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtCorpo"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/txtItem"
+                android:text="Interface Gráfica."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="As telas de um aplicativo android são escritas no formato XML. Para associar uma Activity a uma tela é necessário definir o Id da tela."/>
+
+            <ImageView
+                style="@style/imgCorpo"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/imgnovaactivity1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtRef"
+                android:text="@string/img_do_projeto"/>
+
+
+            <LinearLayout
+                android:id="@+id/layoutCreate"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    style="@style/txtItem"
+                    android:text="onCreate()"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/txtItemDesc"
+                    android:text="1 - Sempre que uma Activity é chamada, esse método é executado, nele é informado qual tela ele vai renderizar através do método setContentView()."/>                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/txtItemDesc"
+                    android:text="2 - Recupera o valor extra contido na Intent."/>
+
+                <ImageView
+                    style="@style/imgCorpo"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/imgnovaactivity2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtRef"
+                    android:text="@string/img_do_projeto"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    style="@style/txtCorpo"
+                    android:text="Dica: experimente pausar esta tela e retornar para ela (não pressione para 'Voltar', utilize o gerenciador de tarefas do seu dispositivo e selecione esta aplicação novamente)."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutRestart"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    style="@style/txtItem"
+                    android:text="onRestart()"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/txtItemDesc"
+                    android:text="Sempre que uma Activity é retomada, esse método é executado."/>
+
+                <ImageView
+                    style="@style/imgCorpo"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/imgnovaactivity3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtRef"
+                    android:text="@string/img_do_projeto"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    style="@style/txtCorpo"
+                    android:text="Para continuar a explorar a plataforma Android, aperte o botão 'Voltar' do seu dispositivo.
+No momento em que essa ação for realizada, esta 'Nova Tela' será fechada e a aplicação retornará para '1 - Activity' do 'Menu', que é de onde surgiu a Intent que acionou esta 'Nova Activity'."/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>

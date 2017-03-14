@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+            <TextView
+                android:text="Intent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtTitulo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtCorpo"
+        android:text="A alma da execução de qualquer operação no android, é a abstração de uma operação a ser executada. Ela pode ser utilizada para iniciar uma Activity, enviar uma mensagem para uma aplicação que roda em outro processo (Broadcast), executar um Service, etc."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Em linguagem mais humana, uma Intent representaria a intenção de executar algo, um pedido que é encaminhado ao sistema operacional para fazer determinada ação. O sistema recebe a mensagem, verifica qual é a sua 'intenção' e toma uma decisão que pode ser, desde abrir uma página na Web (um browser abrirá e a página será exibida), fazer uma chamada telefônica ou iniciar uma nova Actvity."/>
+
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgintet"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="@string/img_do_projeto"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="No click do botão, uma intent é criada e acionada para executar uma Activity."/>
+</LinearLayout>
+
+
+
+
+
+

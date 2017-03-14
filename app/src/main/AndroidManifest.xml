@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joelnetodev.aprendendoandroid">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bookandroid"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.joelnetodev.aprendendoandroid.Activity.ActivityMain"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.joelnetodev.aprendendoandroid.Activity.Activity1ForActivity" />
+        <activity android:name="com.joelnetodev.aprendendoandroid.Activity.Activity1ForContent" />
+        <activity android:name="com.joelnetodev.aprendendoandroid.Activity.Activity1ForBroadcast" />
+
+        <receiver
+            android:name="com.joelnetodev.aprendendoandroid.Broadcast.ReceiverAprendendoAndroid"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.joelnetodev.aprendendoandroid.broadcast.ACTION"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </receiver>
+
+        <service
+            android:name="com.joelnetodev.aprendendoandroid.Service.ServiceAprendendoAndroid"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name="com.joelnetodev.aprendendoandroid.Content.ContentProviderAprendendoAndroid"
+            android:authorities="com.joelnetodev.aprendendoandroid.content"
+            android:enabled="true"
+            android:exported="true"></provider>
+    </application>
+
+</manifest>

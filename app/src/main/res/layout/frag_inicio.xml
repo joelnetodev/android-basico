@@ -1,0 +1,126 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Bem Vindo!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtTitulo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/txtCorpo"
+            android:text="Criado pela Google em 2007, comum em dispositivos móveis como: tablets, smartphones, relógios. O Android é um dos sistemas operacionais mais usados do mundo. Isso atrai a atenção de milhões de desenvolvedores interessados em criar aplicativos para essa plataforma e fazer parte dessa fatia do mercado."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/txtCorpo"
+            android:text="Este aplicativo tem como objetivo demonstrar, de forma prática, o funcionamento de um aplicativo Android, de modo a ajudar o desenvolvedor iniciante a entender e esclarecer dúvidas, exemplificando alguns conceitos e recursos básicos oferecidos por essa plataforma."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/txtCorpo"
+            android:text="Para começar, existe uma sequência de opções que irá aparecer, se pressionado o ícone de 'Menu', na parte superior esquerda, contendo:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/txtItem"
+                android:text="Introdução"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="Apresentação da plataforma, seu funcionamento, comportamento, recursos disponíveis, versões, permissões."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtItem"
+            android:text="0 - Intent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtItemDesc"
+            android:text="O coração do android. O principal meio de execução de processos, telas e troca de informações."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtItem"
+                android:text="1 - Activity"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="Telas de uma aplicação Android, Interface Gráfica e código Java."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/txtItem"
+                android:text="2 - Service"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="Serviços da aplicação executados em segundo plano."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/txtItem"
+                android:text="3 - Content Providers"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="Consumindo o banco de dados da aplicação e de terceiros como: Contatos da Agenda, Calendário, etc."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/txtItem"
+                android:text="4 - Broadcast Receivers"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="Respondendo a eventos do sistema e de outras aplicações como: Nível de bateria baixa, Alarmes etc."/>
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/txtItem"
+                android:text="5 - Components"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="Acesso a recursos do dispositivo como: câmera fotográfica, WiFi."/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/txtItem"
+                android:text="Sobre"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="Informações sobre este aplicativo e sobre os desenvolvedores."/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/txtCorpo"
+            android:text="Dica: Sugiro começar pela Introdução!"/>
+
+
+    </LinearLayout>

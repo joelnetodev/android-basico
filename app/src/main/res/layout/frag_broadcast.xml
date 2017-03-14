@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+            <TextView
+                android:text="Broadcast Receivers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtTitulo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="São classes que herdam da classe android.app.BroadcastReceiver. São componentes responsáveis por receber e tratar eventos provenientes do sistema ou de outras aplicações."/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Um telefone qualquer, durante o seu funcionamento realiza diversos 'eventos', como por exemplo iniciar uma ligação, finalizar uma ligação, receber um SMS, enfim, o tempo todo o SO do telefone está realizando alguma operação.
+Na plataforma Android, esses eventos são avisados a todas aplicações e que, se desejarem, podem responder a essas ações. Isso é feito através dos BroadcastReceivers."/>
+
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgbroadcast1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="Fonte: http://swapand.blogspot.com.br/2013/10/android-broadcastreceiver-tutorial_22.html"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Estes são alguns broadcasts do sistema Android que podem ser tratados por qualquer aplicação:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="android.intent.action.ACTION_BOOT_COMPLETED"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Indica que o telefone acabou de ser ligado."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="android.intent.action.ACTION_POWER_CONNECTED"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Indica que o carregador foi conectado."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="android.intent.action.ACTION_BATTERY_LOW"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Indica que o nível de bateria está baixo."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Para demonstrar como um evento é disparado pelo SO e informado a aplicação que o espera, pressione o botão 'Iniciar Broadcast' abaixo:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Observação: Assim que o botão 'Iniciar Broadcast' for pressionado, uma notificação irá aparecer na barra de status do seu dispositivo."/>
+
+
+    <Button
+        android:id="@+id/btnBroadcast1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/navbroad"
+        android:text="Iniciar Broadcast" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="Botão 'Iniciar Broadcast'"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Uma Intent contendo a URI do Broadcast Receiver desta aplicação foi criado e iniciado."/>
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgbroadcast2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="@string/img_do_projeto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="AndroidManifest.xml"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Para o sistema reconhecer a URI e disparar o evento, ela precisa estar especificada no AndroidManifest."/>
+
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgbroadcast3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="@string/img_do_projeto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Dica: Uma boa prática é juntar o que foi visto sobre Broadcast Receivers com Services.
+Um serviço rodando em background, fazendo uma requisição a um servidor Web, e quando obtivesse uma resposta dispararia um evento no sistema. Por sua vez o Broadcast Receiver da aplicação notificaria o usuário sobre essa atualização do serviço."/>
+
+    </LinearLayout>
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="false"
+    style="@style/layoutCorpo"
+    android:id="@+id/activity_broadcast1"
+    tools:context="com.joelnetodev.aprendendoandroid.Activity.Activity1ForBroadcast">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Tela da Notificação"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtTitulo"/>
+
+            <TextView
+                android:text="Esta tela foi iniciada pela notificação gerada através do Broadcast Receiver da aplicação Aprendendo Android Básico."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtCorpo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/txtItem"
+                android:text="ReceiverAprendendoAndroid"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="1 - O Notification Manager gerencia as notificações da aplicação, pois pode ser que mais de uma seja criada."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="2 - Um objeto NotificationBuilder é criado, esse objeto é uma notificação única que é preenchida com título da notificação, descrição, ícone, etc."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="3 - A PendingIntent especifica uma ação a tomar no futuro. Ela permite você passar uma Intent como um Token para outra aplicação e que essa aplicação execute essa Intent utilizando das suas permissões."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtItemDesc"
+                android:text="4 - Por fim, PendingIntent é acoplada a notificação e o método notify() cria a notificação na barra de status do dispositivo."/>
+
+            <ImageView
+                style="@style/imgCorpo"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/imgnovabroadcast1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtRef"
+                android:text="@string/img_do_projeto"/>
+
+            <TextView
+                android:text="Para retornar pressione o botão 'Voltar' do seu dispositivo."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtCorpo"/>
+
+        </LinearLayout>
+
+    </ScrollView>

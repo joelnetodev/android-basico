@@ -1,0 +1,216 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+            <TextView
+                android:text="Service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtTitulo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/txtCorpo"
+                android:text="São classes que herdam da classe android.app.Service. É um modo da aplicação informar ao sistema para fazer algo em background."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Os Services são geralmente utilizados para realizar tarefas de sincronização (com um servidor, por exemplo) podendo ter sua execução agendada e não dependendo de nenhuma ação do usuário. Por isso, são chamados de componentes de background."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Um Service tem basicamente 2 (dois) estados:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="Rodando"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Quando o serviço é iniciado."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="Parado"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Quando o serviço é finalizado."/>
+
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgservice1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="Fonte: http://www.edureka.co/blog/android-tutorials-beginners-service-component//"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="Não é um processo separado"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="O Service executa no processo da aplicação a qual ele pertence."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="Não é uma Thread"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Um service é parte da Thread Main."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Para demonstrar o funcionamento de um Serviço, aperte no botão 'Iniciar Serviço' abaixo:"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Observação: Depois de apertar no botão, finalize esta aplicação (utilize o gerenciador de tarefas do seu dispositivo para isso), aguarde alguns segundos e a aplicação retornará por conta própria."/>
+
+    <Button
+        android:id="@+id/btnServ1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/navservice"
+        android:text="Iniciar Serviço" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="O serviço fica rodando em background e vai continuar executando sua tarefa."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Para parar o serviço e evitar que a aplicação fique abrindo repetidamente no seu dispositivo após fecha-la, aperte no botão 'Parar Serviço' abaixo:"/>
+
+    <Button
+        android:id="@+id/btnServ2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/navservice"
+        android:text="Parar Serviço" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItem"
+        android:text="Botão 'Iniciar Serviço'"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Uma intenção da classe ServiceAprendendoAndroid foi criada. O método startService() inicia este serviço."/>
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgservice2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="@string/img_do_projeto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItem"
+        android:text="Botão 'Parar Serviço'"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Uma intenção da classe ServiceAprendendoAndroid foi criada. O método stopService() destrói este serviço."/>
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgservice3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="@string/img_do_projeto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItem"
+        android:text="ServiceAprendendoAndroid"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="1 - Um booleano foi criado para controlar a atividade do serviço."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="2 - Uma Thread secundária é iniciada para rodar em segundo plano."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="3 - Essa Thread aguarda por 5 (cinco) segundos antes de executar a Intent que inicia o aplicativo."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="4 - Quando o serviço é parado, o método onDestroy() é executado."/>
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgservice4"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="@string/img_do_projeto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Observação: O método onCreare() é executado apenas uma vez. Se o serviço estiver sendo chamado diversas vezes (ex: caso seja pressionado novamente o botão 'Iniciar Serviço') o método que vai ficar sendo executado repetidamente é o onStartCommand()."/>
+
+    </LinearLayout>
+
+
+
+
+
+

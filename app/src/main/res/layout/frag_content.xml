@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Content Provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtTitulo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="São classes que herdam da classe android.app.ContentProvaider. É um recurso disponibilizado pelo Android para permitir o compartilhamento de dados entre diferentes aplicações.
+Isso se faz necessário porque a plataforma não possui um local comum para guardar os dados e compartilhá-los."/>
+
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgcontent1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="Fonte: http://www.decom.ufop.br/imobilis/tutorial-android-content-provider-parte-1-entenda-o-content-provider/"/>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    style="@style/txtCorpo"
+    android:text="Cada Content Provider possui um caminho único que é informado no AndroidManifest, ele é registrado no SO no momento da instalação da aplicação.
+O modelo de dados utilizado é como uma simples tabela de banco de dados, onde cada linha é um registro e cada coluna são os dados de um tipo particular."/>
+
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgcontent2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="@string/img_do_projeto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Para criar o seu póprio Content Provider (que pode tanto servir para o seu aplicativo, quanto para aplicativos de terceiros), além de ter conhecimento em banco de dados para criar e manipular as tabelas,
+é necessário implementar uma série de métodos herdados da classe android.app.ContentProvider."/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItem"
+        android:text="ContentProviderAprendendoAndroid"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="1 - O método query() é usado para realizar uma consulta utilizando os parâmetros passados como complemento para critério de seleção, ordenação, filtro etc."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="2 - O restante dos métodos representam a manipulação de registros: Insert, Update e Delete."/>
+
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgcontent3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="@string/img_do_projeto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Observação: Consultas e inserções de dados usam uma lista de ContentValues como parâmetros, cada item é um dicionário de dados contendo uma chave e um objeto, que são equivalentes a campo da tabela e valor do campo."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Para demonstrar como este aplicativo tem acesso ao Content Provider da sua lista telefônica, basta pressionar no botão 'Visualizar Agenda de Contatos' abaixo:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Observação: Assim que o botão 'Visualizar Agenda de Contatos' for pressionado, uma nova tela irá aparecer com uma lista de nomes da sua Agenda de Contatos. Para retornar aperte o botão 'Voltar' do seu dispositivo."/>
+    <!--android:onClick="btnMessageOnClick"-->
+    <Button
+        android:id="@+id/btnContent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/navcontent"
+        android:text="Visualizar Agenda de Contatos" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItem"
+        android:text="Nova Activity Content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="1 - Um objeto URI foi criado contendo o endereço do Content Provider da Agenda de Contatos (o equivalente a content://com.android.contacts/contacts)."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItemDesc"
+        android:text="2 - A consulta é ordenada por 'Display_Name' (nome do contato)."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="3 - Query executa uma consulta de todos os dados existentes na Agenda de Contatos."/>
+
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgnovacontent1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="@string/img_do_projeto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Observação: Para realizar uma consulta ordenada, ou que retorne campos específicos, é necessário saber o nome das colunas da base que deseja acessar.
+Por definição, o SDK do Android dispõe de um conjunto de classes e propriedades que representam o nome dos campos de cada Content da plataforma como: Calendário, Mapas, Agenda de Contatos, etc."/>
+
+</LinearLayout>
+
+
+
+
+
+

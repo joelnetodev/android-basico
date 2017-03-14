@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+            <TextView
+                android:text="Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtTitulo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtCorpo"
+                android:text="São classes que herdam da classe android.app.Activity. É basicamente uma classe gerenciadora de UI (interface com o usuário). Todo aplicativo android começa por uma Activity."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Toda Activity possui um layout padrão para inserir components gráficos. Uma aplicação pode ter várias Activities."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Uma Activiy tem basicamente 3 (três) estados:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="Rodando"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Quando está sendo exibida na tela."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="Pausada"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Quando ela perde o foco para outra Activity, mas continua visível. Pode ser finalizada caso falte memória no SO para outro processo."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtItem"
+        android:text="Parada"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="Quando ela não está mais visível ao usuário. Neste caso, seu objeto ainda mantém o estado, mas pode ser morto a qualquer momento."/>
+
+    <ImageView
+            style="@style/imgCorpo"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/imgactivity1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtRef"
+            android:text="Fonte: https://developer.android.com/reference/android/app/Activity.html"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Para abrir uma nova tela e demonstrar alguns estados de uma Activity usando Intent, pressione o botão 'Acessar Nova Activity' abaixo:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Observação: Se quiser, digite algo como parâmetro para ser enviado à 'Nova Tela' que será aberta.
+Cada vez que essa 'Nova Tela' passar por algum estado do seu ciclo de vida, uma menssagem será mostrada informando qual método foi executado dentro da Activity."/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite algo..."
+        android:inputType="text"/>
+
+    <!--android:onClick="btnMessageOnClick"-->
+    <Button
+        android:id="@+id/btnActiv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/navactivity"
+        android:text="Acessar Nova Activity" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItem"
+        android:text="Botão 'Acessar Nova Activity'"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="1 - Um objeto Intent é criado contendo o nome da Activity a qual desejo abrir, nela eu coloco um valor extra, que é o texto que foi digitado."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="2 - Um parâmetro extra com valor é adicionado da Intent e o método startActivity() é chamado para iniciar a 'Nova Activity'."/>
+
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgactivity2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="@string/img_do_projeto"/>
+
+    </LinearLayout>
+
+
+
+
+
+

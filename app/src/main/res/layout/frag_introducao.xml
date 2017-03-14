@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+            <TextView
+                android:text="Introdução"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtTitulo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/txtCorpo"
+                android:text="O Android é baseado no núcleo Linux, que atua como uma camada de abstração entre Hardware e Software.
+Dependendo do dispositivo, ele pode ter componentes como GPS, Bluetooth, Câmera, acesso a Web, Vídeo, Imagens."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/txtCorpo"
+                android:text="A plataforma dispõe de uma série de bibliotecas chamadas Libraries. Caso algum aplicativo necessite acessar, por exemplo, a Agenda de Contatos, o GPS, ou a Câmera, ele pode interagir com os Applications FrameWorks, que são APIs optimizadas para interação esses componentes."/>
+
+        <ImageView
+            style="@style/imgCorpo"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/imgintro1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtRef"
+            android:text="Fonte: http://askubuntu.com/questions/644988/recompiling-android-runtime"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/txtCorpo"
+            android:text="Cada aplicativo roda em uma sua própria instância da Máquina Virtual Java, baseada em registradores, chamada Dalvik. Onde cada aplicativo é, tecnicamente falando, seu próprio usuário. Por esse motivo, permissões de acesso a diversos recursos devem ser concedidas, dependendo da necessidade."/>
+        <ImageView
+            style="@style/imgCorpo"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/imgintro2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtRef"
+            android:text="Fonte: Imagem retirada da PlayStore ao instalar algum aplicativo que pede permissão."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/txtCorpo"
+            android:text="Durante o desenvolvimento da sua aplicação, as permissões que serão solicitadas devem ser escritas em um arquivo no formato XML chamado AndroidManifest.
+Não apenas as permissões de uso, mas todas as Activities (telas) contidas na sua aplicação devem ser informadas nesse arquivo, bem como Serviços, os Broadcast Receivers, os Content Providers, etc."/>
+        <ImageView
+            style="@style/imgCorpo"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/imgintro3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtRef"
+            android:text="@string/img_do_projeto"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Ao criar um aplicativo para a plataforma Android, existem alguns fatores que é preciso levar em consideração, um deles é a versão.
+Quanto mais recursos e funcionalidades novas sua aplicação consumir, mais difícil será a compatibilidade com as versões anteriores."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="O sistema operacional passou por diversas modificações e evoluções desde a sua criação, hoje (pelo menos até a data da criação deste aplicativo) ele se encontra na versão 6.0 Marshmallow."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/txtCorpo"
+        android:text="Em poucas pesquisas é possível encontrar informações abrangentes que podem ajudar a tomar essa decisão."/>
+    
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgintro4"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="Fonte: https://developer.android.com/about/dashboards/index.html"/>
+
+    <TextView
+        android:text="Estrutura básica de um projeto android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtItem"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="1 - Diretório do manifest onde fica o arquivo do AndroidManifest."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="2 - Diretório do código Java da aplicação contendo as Activities, Services... e os packages e classes criadas pelo desenvolvedor."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtItemDesc"
+        android:text="3 - Diretório de resources, onde ficam os aquivos relativos ao layout da aplicação como telas, arquivos de imagens, estilos, menus etc."/>
+
+    <ImageView
+        style="@style/imgCorpo"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgintro5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txtRef"
+        android:text="@string/img_do_projeto"/>
+    </LinearLayout>
+
+
+
+
+
+
